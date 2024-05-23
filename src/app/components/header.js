@@ -18,15 +18,15 @@ const Header = () => {
           <nav id="navigation">
             <ul id="responsive">
               <li>
-                <a href="#" className="current">
-                  Home
-                </a>
+              <Link href="/" className="current">Home</Link>
               </li>
               <li>
-                <a href="#">Find Work</a>
+              <Link href="/BrowseCompanies" className="">Browse Company</Link>
+               
               </li>
               <li>
-                <a href="#">For Employers</a>
+              <Link href="/single-company-profile" className="">single company profile</Link>
+                
               </li>
             </ul>
           </nav>
@@ -37,7 +37,7 @@ const Header = () => {
             <div className="header-notifications">
               <div className="header-notifications-trigger">
                 <a href="#">
-                  <i className="far fa-bell" />
+                <i class="icon-feather-bell"></i>
                   <span>4</span>
                 </a>
               </div>
@@ -45,7 +45,7 @@ const Header = () => {
             <div className="header-notifications">
               <div className="header-notifications-trigger">
                 <a href="#">
-                  <i className="far fa-envelope" />
+                <i class="icon-feather-mail"></i>
                   <span>3</span>
                 </a>
               </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import  "./bootstrap.css";
 import  "./icons.css";
 import styles from "./page.module.css";
-
+import f1Img from "./images/company-logo-01.png";
 import Header from "./components/header"
 import Footer from "./components/footer"
 
@@ -15,7 +15,7 @@ const  Home = () => {
       <>
   <div
     className="intro-banner"
-    data-background-image="images/home-background.jpg"
+    
   >
     <div className="container">
       <div className="row">
@@ -49,7 +49,7 @@ const  Home = () => {
                   type="text"
                   placeholder="Online Job"
                 />
-                <i className="fas fa-map-marker-alt" />
+                <i class="icon-material-outline-location-on"></i>
               </div>
             </div>
             <div className="intro-search-field">
@@ -101,7 +101,7 @@ const  Home = () => {
           <div className="categories-container">
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="far fa-file-code" />
+              <i class="icon-line-awesome-file-code-o"></i>
               </div>
               <div className="category-box-counter">612</div>
               <div className="category-box-content">
@@ -111,7 +111,7 @@ const  Home = () => {
             </a>
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="fas fa-cloud-upload-alt" />
+              <i class="icon-line-awesome-cloud-upload"></i>
               </div>
               <div className="category-box-counter">113</div>
               <div className="category-box-content">
@@ -121,7 +121,7 @@ const  Home = () => {
             </a>
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="fas fa-briefcase" />
+              <i class="icon-line-awesome-suitcase"></i>
               </div>
               <div className="category-box-counter">186</div>
               <div className="category-box-content">
@@ -131,7 +131,7 @@ const  Home = () => {
             </a>
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="fas fa-pen" />
+              <i class="icon-line-awesome-pencil"></i>
               </div>
               <div className="category-box-counter">298</div>
               <div className="category-box-content">
@@ -141,7 +141,7 @@ const  Home = () => {
             </a>
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="fas fa-chart-pie" />
+              <i class="icon-line-awesome-pie-chart"></i>
               </div>
               <div className="category-box-counter">549</div>
               <div className="category-box-content">
@@ -151,7 +151,7 @@ const  Home = () => {
             </a>
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="fas fa-images" />
+              <i class="icon-line-awesome-image"></i>
               </div>
               <div className="category-box-counter">873</div>
               <div className="category-box-content">
@@ -161,7 +161,7 @@ const  Home = () => {
             </a>
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="fas fa-bullhorn" />
+              <i class="icon-line-awesome-bullhorn"></i>
               </div>
               <div className="category-box-counter">125</div>
               <div className="category-box-content">
@@ -171,7 +171,7 @@ const  Home = () => {
             </a>
             <a href="#" className="category-box">
               <div className="category-box-icon">
-                <i className="fas fa-graduation-cap" />
+              <i class="icon-line-awesome-graduation-cap"></i>
               </div>
               <div className="category-box-counter">445</div>
               <div className="category-box-content">
@@ -198,7 +198,8 @@ const  Home = () => {
             <a href="#" className="job-listing with-apply-button">
               <div className="job-listing-details">
                 <div className="job-listing-company-logo">
-                  <img src="images/company-logo-01.png" alt="" />
+                  
+                  <Image height={50} width={180} src={f1Img} alt="" />
                 </div>
                 <div className="job-listing-description">
                   <h3 className="job-listing-title">
@@ -207,7 +208,7 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i className="far fa-building" /> Hexagon{" "}
+                        <i class="icon-material-outline-business"></i> Hexagon{" "}
                         <div
                           className="verified-badge"
                           title="Verified Employer"
@@ -215,13 +216,13 @@ const  Home = () => {
                         />
                       </li>
                       <li>
-                        <i className="fas fa-map-marker-alt" /> San Francissco
+                        <i class="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i className="fas fa-briefcase" /> Full Time
+                        <i class="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i className="far fa-clock" /> 2 days ago
+                        <i class="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -234,23 +235,23 @@ const  Home = () => {
             <a href="#" className="job-listing with-apply-button">
               <div className="job-listing-details">
                 <div className="job-listing-company-logo">
-                  <img src="images/company-logo-05.png" alt="" />
+                <Image height={50} width={180} src={f1Img} alt="" />
                 </div>
                 <div className="job-listing-description">
                   <h3 className="job-listing-title">Competition Law Officer</h3>
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i className="far fa-building" /> Laxo
+                        <i class="icon-material-outline-business"></i> Laxo
                       </li>
                       <li>
-                        <i className="fas fa-map-marker-alt" /> San Francissco
+                        <i class="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i className="fas fa-briefcase" /> Full Time
+                        <i class="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i className="far fa-clock" /> 2 days ago
+                        <i class="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -263,23 +264,23 @@ const  Home = () => {
             <a href="#" className="job-listing with-apply-button">
               <div className="job-listing-details">
                 <div className="job-listing-company-logo">
-                  <img src="images/company-logo-02.png" alt="" />
+                <Image height={50} width={180} src={f1Img} alt="" />
                 </div>
                 <div className="job-listing-description">
                   <h3 className="job-listing-title">Barista and Cashier</h3>
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i className="far fa-building" /> Coffee
+                        <i class="icon-material-outline-business"></i> Coffee
                       </li>
                       <li>
-                        <i className="fas fa-map-marker-alt" /> San Francissco
+                        <i class="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i className="fas fa-briefcase" /> Full Time
+                        <i class="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i className="far fa-clock" /> 2 days ago
+                        <i class="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -292,7 +293,7 @@ const  Home = () => {
             <a href="#" className="job-listing with-apply-button">
               <div className="job-listing-details">
                 <div className="job-listing-company-logo">
-                  <img src="images/company-logo-03.png" alt="" />
+                <Image height={50} width={180} src={f1Img} alt="" />
                 </div>
                 <div className="job-listing-description">
                   <h3 className="job-listing-title">
@@ -301,7 +302,7 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i className="far fa-building" /> King{" "}
+                        <i class="icon-material-outline-business"></i> King{" "}
                         <div
                           className="verified-badge"
                           title="Verified Employer"
@@ -309,13 +310,13 @@ const  Home = () => {
                         />
                       </li>
                       <li>
-                        <i className="fas fa-map-marker-alt" /> San Francissco
+                        <i class="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i className="fas fa-briefcase" /> Full Time
+                        <i class="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i className="far fa-clock" /> 2 days ago
+                        <i class="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -328,11 +329,7 @@ const  Home = () => {
             <a href="#" className="job-listing with-apply-button">
               <div className="job-listing-details">
                 <div className="job-listing-company-logo">
-                  <Image
-                  src="/images/logo.png" 
-                  width={60}
-                  height={60}
-                  alt="" />
+                <Image height={50} width={180} src={f1Img} alt="" />
                 </div>
                 <div className="job-listing-description">
                   <h3 className="job-listing-title">
@@ -341,16 +338,16 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i className="far fa-building" /> Skyist
+                        <i class="icon-material-outline-business"></i> Skyist
                       </li>
                       <li>
-                        <i className="fas fa-map-marker-alt" /> San Francissco
+                        <i class="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i className="fas fa-briefcase" /> Full Time
+                        <i class="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i className="far fa-clock" /> 2 days ago
+                        <i class="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>

@@ -4,6 +4,7 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
     font-family: "Nunito", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
 }
+a:hover{text-decoration: none !important;}
 input,
 input[type="text"],
 input[type="password"],
@@ -2820,7 +2821,7 @@ body #backtotop a {
 .single-page-header {
 	margin-bottom: 65px;
 	padding: 60px 0;
-	position: relative;
+	position: relative; background: url(./images/single-company.jpg);
 }
 
 .single-page-header .container {
@@ -7363,7 +7364,7 @@ input:checked + .switch-button:before {
 ------------------------------------- */
 .intro-banner {
 	padding: 105px 0;
-	/* position: relative; background: url(./images/home-background.jpg); */
+	position: relative; background: url(./images/home-background.jpg);
 }
 
 .intro-banner.big-padding {
@@ -7857,6 +7858,9 @@ input:checked + .switch-button:before {
 	transition: 0.35s;
 	margin-bottom: 12px;
 }
+.star-rating i {
+    color: #febe42; margin: 0 2px;
+}
 
 /* Box Counter */
 .category-box-counter {
@@ -8137,4 +8141,183 @@ input:checked + .switch-button:before {
 	
 #backtotop a, .header-notifications-trigger span, a.header-notifications-button, #navigation ul ul.dropdown-nav ul.dropdown-nav li:hover a:after, #navigation ul ul.dropdown-nav li:hover a:after, .mm-menu em.mm-counter, .language-switcher.bootstrap-select.btn-group.open button, .language-switcher.bootstrap-select.btn-group button:hover, .footer-links ul li a span:before, .newsletter button, .pagination ul li a.current-page, a.blog-post-info:hover, #posts-nav li a:hover span, .comment-by a.reply:hover, .contact-address-headline:after, .enable-filters-button span, .enable-filters-button i, .job-listing.with-apply-button:hover .list-apply-button, .letters-list a.current, span.button, button.button, input[type="button"], input[type="submit"], a.button, .list-1 li:before, mark.color, table.basic-table th, .copy-url .copy-url-button, .keyword-input-container .keyword-input-button, .tags-container input[type="checkbox"]:checked + label, input:checked + .switch-button, .radio input[type="radio"] + label .radio-label:after, .uploadButton .uploadButton-button:hover, .pricing-plan .button:hover, .pricing-plan.recommended .button, .pricing-plan .recommended-badge, .payment-tab-trigger > input:checked ~ label::after, .breathing-icon, .icon-box-check, .testimonial-author span, .qtyInc:hover, .qtyDec:hover, #sign-in-dialog .mfp-close:hover, #small-dialog-1 .mfp-close:hover, #small-dialog-2 .mfp-close:hover, #small-dialog-3 .mfp-close:hover, #small-dialog-4 .mfp-close:hover, #small-dialog .mfp-close:hover, .slider-selection, .cluster-visible, .marker-container, .custom-zoom-in:hover, .custom-zoom-out:hover, #geoLocation:hover, #streetView:hover, #scrollEnabling:hover, #scrollEnabling.enabled, a.apply-now-button, a.attachment-box:hover, .freelancer-indicators .indicator-bar span, .dashboard-nav ul li span.nav-tag, .dashboard-box .button.dark:not(.ico):hover, .messages-inbox ul li:before, .message-by h5 i, .message-bubble.me .message-text {
     background-color: #D1405D;
+}
+
+.boxed-list {
+	margin-top: 10px;
+	display: block;
+}
+
+.boxed-list-headline {
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	padding: 20px 35px;
+}
+
+.boxed-list-headline h3 { font-size: 18px; }
+.boxed-list-headline h3 span { color: #888; }
+
+.boxed-list-headline h3 i {
+	font-size: 18px;
+	color: #66676b;
+	font-size: 24px;
+	position: relative;
+	top: 3px;
+	line-height: 0;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.boxed-list ul.boxed-list-ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.boxed-list ul.boxed-list-ul > li {
+	display: block;
+	background-color: transparent;
+	padding: 35px;
+	border-radius: 4px;
+}
+
+.boxed-list ul.boxed-list-ul > li:nth-child(2n) {
+	background-color: #fafafa;
+}
+
+/* Fields UL */
+.fields-ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.fields-ul > li {
+	display: block;
+	background-color: transparent;
+	padding: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e4e4e4
+}
+/* Boxed List Item
+------------------------------------- */
+.boxed-list-item {
+	display: flex;
+}
+
+.boxed-list-item .item-image {
+	flex: 0 0 60px;
+	height: 60px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	padding: 10px;
+	margin-right: 25px;
+	position: relative;
+	top: -2px;
+	display: flex;
+	background-color: #fff;
+}
+
+/* IE 11 Fixes */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+	.boxed-list-item .item-image { max-width: 60px; }
+	.boxed-list-item .item-image img { width: 100%; }
+}
+/* IE 11 Fixes - End */
+
+.boxed-list-item .item-image img {
+	height: auto;   
+	align-self: center;
+}
+
+.boxed-list-item .item-content h4 a,
+.boxed-list-item .item-content h4 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+}
+
+.boxed-list-item .item-content h4 span {
+	font-size: 16px;
+	color: #808080;
+	display: block;
+	font-weight: 500;
+}
+
+.boxed-list-item .item-details {
+	display: flex;
+	margin-top: 5px;
+}
+
+.boxed-list-item .item-details .star-rating {
+	top: -2px;
+	position: relative;
+	margin-right: 15px;
+}
+
+.boxed-list-item .item-details .detail-item {
+	margin-right: 15px;
+	color: #808080;
+}
+
+.boxed-list-item .item-details .detail-item a { color: #808080; }
+.boxed-list-item .item-details .detail-item a:hover { color: #66676b; }
+
+.boxed-list-item .item-details .detail-item i {
+	margin-right: 3px;
+	position: relative;
+	top: 0;
+}
+
+.boxed-list-item .item-description p { margin-bottom: 0; padding-bottom: 0; }
+
+.boxed-list-item .item-description {
+	margin-top: 15px;
+}
+/* Single Freelancer Profile
+------------------------------------- */
+
+/* Freelancer Socials*/
+.freelancer-socials ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	margin: 0 0 -5px -8px;
+}
+
+.freelancer-socials ul li {
+	display: inline-block;
+	font-size: 24px;
+}
+
+.freelancer-socials ul li a {
+	color: #b9b9b9;
+	padding: 0 8px;
+}
+
+.freelancer-socials ul li a:hover {
+	color: #333;
+}/* ---------------------------------- */
+/* Copy to clipboard
+------------------------------------- */
+.copy-url {
+	display: flex;
+}
+
+.copy-url input {
+	border-radius: 4px 0 0 4px;
+	border-right: 0;
+}
+
+.copy-url .copy-url-button {
+	min-width: 48px;
+	background-color: #66676b;
+	color: #fff;
+	border-radius: 0 4px 4px 0;
+}
+.margin-bottom-25 {
+    margin-bottom: 25px !important;
+}.margin-top-25 {
+    margin-top: 25px !important;
 }

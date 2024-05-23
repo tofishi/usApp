@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from "next/image";
 import styles from "../page.module.css";
+import myLocalImage from "../images/logo2.png";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
               <div className="footer-rows-left">
                 <div className="footer-row">
                   <div className="footer-row-inner footer-logo">
-                    <img src="images/logo2.png" alt="" />
+                  <Image height={50} width={180} src={myLocalImage} alt="" />
                   </div>
                 </div>
               </div>
@@ -23,22 +24,22 @@ const Header = () => {
                     <ul className="footer-social-links">
                       <li>
                         <a href="#" title="Facebook">
-                          <i className="fab fa-facebook-f" />
+                        <i class="icon-brand-facebook-f"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#" title="Twitter">
-                          <i className="fab fa-twitter" />
+                        <i class="icon-brand-twitter"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#" title="Google Plus">
-                          <i className="fab fa-google-plus-g" />
+                        <i class="icon-brand-google-plus-g"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#" title="LinkedIn">
-                          <i className="fab fa-linkedin-in" />
+                        <i class="icon-brand-linkedin-in"></i>
                         </a>
                       </li>
                     </ul>
@@ -176,7 +177,7 @@ const Header = () => {
                 placeholder="Enter your email address"
               />
               <button type="submit">
-                <i className="fas fa-arrow-right" />
+              <i class="icon-feather-arrow-right"></i>
               </button>
             </form>
           </div>
