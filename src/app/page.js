@@ -51,7 +51,7 @@ const  Home = () => {
                   type="text"
                   placeholder="Online Job"
                 />
-                <i class="icon-material-outline-location-on"></i>
+                <i className="icon-material-outline-location-on"></i>
               </div>
             </div>
             <div className="intro-search-field">
@@ -118,7 +118,7 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i class="icon-material-outline-business"></i> Hexagon{" "}
+                        <i className="icon-material-outline-business"></i> Hexagon{" "}
                         <div
                           className="verified-badge"
                           title="Verified Employer"
@@ -126,13 +126,13 @@ const  Home = () => {
                         />
                       </li>
                       <li>
-                        <i class="icon-material-outline-location-on"></i> San Francissco
+                        <i className="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i class="icon-material-outline-business-center"></i> Full Time
+                        <i className="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i class="icon-material-outline-access-time"></i> 2 days ago
+                        <i className="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -152,16 +152,16 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i class="icon-material-outline-business"></i> Laxo
+                        <i className="icon-material-outline-business"></i> Laxo
                       </li>
                       <li>
-                        <i class="icon-material-outline-location-on"></i> San Francissco
+                        <i className="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i class="icon-material-outline-business-center"></i> Full Time
+                        <i className="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i class="icon-material-outline-access-time"></i> 2 days ago
+                        <i className="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -181,16 +181,16 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i class="icon-material-outline-business"></i> Coffee
+                        <i className="icon-material-outline-business"></i> Coffee
                       </li>
                       <li>
-                        <i class="icon-material-outline-location-on"></i> San Francissco
+                        <i className="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i class="icon-material-outline-business-center"></i> Full Time
+                        <i className="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i class="icon-material-outline-access-time"></i> 2 days ago
+                        <i className="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -212,7 +212,7 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i class="icon-material-outline-business"></i> King{" "}
+                        <i className="icon-material-outline-business"></i> King{" "}
                         <div
                           className="verified-badge"
                           title="Verified Employer"
@@ -220,13 +220,13 @@ const  Home = () => {
                         />
                       </li>
                       <li>
-                        <i class="icon-material-outline-location-on"></i> San Francissco
+                        <i className="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i class="icon-material-outline-business-center"></i> Full Time
+                        <i className="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i class="icon-material-outline-access-time"></i> 2 days ago
+                        <i className="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
@@ -248,16 +248,16 @@ const  Home = () => {
                   <div className="job-listing-footer">
                     <ul>
                       <li>
-                        <i class="icon-material-outline-business"></i> Skyist
+                        <i className="icon-material-outline-business"></i> Skyist
                       </li>
                       <li>
-                        <i class="icon-material-outline-location-on"></i> San Francissco
+                        <i className="icon-material-outline-location-on"></i> San Francissco
                       </li>
                       <li>
-                        <i class="icon-material-outline-business-center"></i> Full Time
+                        <i className="icon-material-outline-business-center"></i> Full Time
                       </li>
                       <li>
-                        <i class="icon-material-outline-access-time"></i> 2 days ago
+                        <i className="icon-material-outline-access-time"></i> 2 days ago
                       </li>
                     </ul>
                   </div>
