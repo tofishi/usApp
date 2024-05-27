@@ -25,8 +25,10 @@ const Sidebar = () => {
 					<div className="dashboard-nav-inner">
 
 						<ul data-submenu-title="Start">
-							<li className="active"><a href="dashboard.html"><i className="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="dashboard-messages.html"><i className="icon-material-outline-question-answer"></i> Messages <span className="nav-tag">2</span></a></li>
+						
+							<li className="active"><Link href="/dashboard" className=""><i className="icon-material-outline-dashboard"></i> Dashboard</Link></li>
+							<li><Link href="/dashboard" className=""><i className="icon-material-outline-question-answer"></i> Messages <span className="nav-tag">2</span></Link></li>
+							<li><Link href="/Form" className=""><i className="icon-material-outline-assignment"></i> Form </Link></li>
 							
 						</ul>
 						

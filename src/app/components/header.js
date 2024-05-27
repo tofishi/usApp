@@ -75,18 +75,18 @@ const [isActive, setIsActive] = useState(false);
           <div className="header-widget hide-on-mobile">
             <div className="header-notifications">
               <div className="header-notifications-trigger">
-                <a href="#">
-                <i class="icon-feather-bell"></i>
+              <Link href="#" >
+                <i className="icon-feather-bell"></i>
                   <span>4</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="header-notifications">
               <div className="header-notifications-trigger">
-                <a href="#">
-                <i class="icon-feather-mail"></i>
+              <Link href="#">
+                <i className="icon-feather-mail"></i>
                   <span>3</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -122,9 +122,9 @@ const [isActive, setIsActive] = useState(false);
 						</div>
 						
 						<ul className="user-menu-small-nav">
-							<li><a href="dashboard.html"><i className="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="dashboard-settings.html"><i className="icon-material-outline-settings"></i> Settings</a></li>
-							<li><a href="index-logged-out.html"><i className="icon-material-outline-power-settings-new"></i> Logout</a></li>
+							<li><Link href="/dashboard"><i className="icon-material-outline-dashboard"></i> Dashboard</Link></li>
+							<li><Link href="#" ><i className="icon-material-outline-settings"></i> Settings</Link></li>
+							<li><Link href="#" ><i className="icon-material-outline-power-settings-new"></i> Logout</Link></li>
 						</ul>
 
 						</div>

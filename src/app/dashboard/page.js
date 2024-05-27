@@ -57,7 +57,7 @@ const  About = () => {
 
 
       </div>
-    <div>This is About page</div>  
+   
     
       <Footer />
     </>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import  "./bootstrap.css";
+
 import  "./icons.css";
 import styles from "./page.module.css";
 import f1Img from "./images/company-logo-01.png";
