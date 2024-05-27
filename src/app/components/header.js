@@ -1,5 +1,6 @@
 'use client'
-import React, { useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react';
+
 import Link from 'next/link';
 import Image from "next/image";
 import styles from "../page.module.css";
@@ -9,9 +10,40 @@ import $ from 'jquery';
 
 
 const Header = () => {
+ 
+// for dropdown
+
+const [isActive, setIsActive] = useState(false);
+  const userMenuRef = useRef(null);
+
+  const handleUserMenuTriggerClick = (event) => {
+    event.preventDefault();
+    setIsActive(!isActive);
+  };
+
+  const handleClickOutside = (event) => {
+    if (userMenuRef.current && !userMenuRef.current.contains(event.target)) {
+      setIsActive(false);
+    }
+  };
+
   useEffect(() => {
-    $("#logo").hide();
-  }, []);
+    if (isActive) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isActive]);
+
+  // end for drop down
+
+
+
+
   return (
     <header id="header-container" className="fullwidth">
     <div id="header">
@@ -61,12 +93,12 @@ const Header = () => {
           <div className="header-widget">
 
 					
-					<div className="header-notifications user-menu">
+					<div className="header-notifications user-menu"  onClick={handleUserMenuTriggerClick}>
 						<div className="header-notifications-trigger">
 							<a href="#"><div className="user-avatar status-online"><Image width={42} height={42}  src={userImg} alt="" /></div></a>
 						</div>
 
-						
+						{isActive && ( 
 						<div className="header-notifications-dropdown">
 
 							
@@ -81,7 +113,7 @@ const Header = () => {
 								</div>
 								
 								
-								<div className="status-switch" id="snackbar-user-status">
+								<div className="status-switch" id="snackbar-user-status" >
 									<label className="user-online current-status">Online</label>
 									<label className="user-invisible">Invisible</label>
 									
@@ -96,6 +128,8 @@ const Header = () => {
 						</ul>
 
 						</div>
+) }
+
 					</div>
 
 				</div>
